@@ -22,6 +22,5 @@ void stprintf_time(time_t org_time,char *time_str)
     struct tm *tm_ptr;
     tm_ptr = localtime(&org_time);
 
-    sprintf(time_str,"%d%d%d_%d",
-                tm_ptr->tm_year+1900,tm_ptr->tm_mon+1,tm_ptr->tm_mday,tm_ptr->tm_hour);
+    sprintf(time_str,"%d%d%d_%d",tm_ptr->tm_year+1900,tm_ptr->tm_mon+1,tm_ptr->tm_mday,tm_ptr->tm_hour);
 }
