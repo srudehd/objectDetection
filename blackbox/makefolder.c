@@ -2,9 +2,7 @@
 #include <stdio.h>
 #include <sys/types.h>
 #include <sys/stat.h>
-
 void print_time(time_t,char *);
-
 int main()
 {
     time_t the_time;
@@ -16,7 +14,6 @@ int main()
 
     return 0;
 }
-
 void print_time(time_t org_time,char *time_str)
 {
     struct tm *tm_ptr;
